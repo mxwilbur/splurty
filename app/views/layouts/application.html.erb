@@ -12,20 +12,22 @@
   <body>
     <header class="row">
       <div class="col-3">
-        <div class="circle">
-          <br />
-          Why
-          <br />
-          Wear
-          <br />
-          Caps
-        </div>
+        <%= link_to root_path do %>
+          <div class="circle">
+            <br />
+            Why
+            <br />
+            Wear
+            <br />
+            Caps
+          </div>
+        <% end %>
       </div>
       <div class="col-4 slogan">
         Splurting out unsolicited advice about entrepreneurship since 2016
       </div>
       <div class="col-5 links">
-      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'Contribute', new_quote_path %>
       <%= link_to 'About', '#' %>
       </div> 
     </header>
