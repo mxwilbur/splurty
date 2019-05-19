@@ -47,8 +47,8 @@
           </div>
           <%= simple_form_for Quote.new do |f| %>
             <div class="modal-body">
-                <%= f.input :saying %>
-                <%= f.input :author %>
+                <%= f.input :saying, label: "What is the saying you want to add?", placeholder: "Caps are rain gear." %>
+                <%= f.input :author, label: "Who is the author of the quote?", placeholder: "Paula Patagonia" %>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
